@@ -15,8 +15,8 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
     const [qty, setQty] = useState(quantity);
 
     return (
-        <div className="bg-white rounded-[32px] p-2 pb-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] border border-gray-100/50 flex flex-col group hover:shadow-lg transition-all duration-300">
-            <div className="relative w-full aspect-4/3 rounded-[24px] overflow-hidden mb-4 bg-gray-50">
+        <div className="w-[240px] shrink-0 bg-white rounded-[32px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
+            <div className="relative w-full h-[140px] shrink-0 overflow-hidden mb-3 bg-gray-50">
                 <Image
                     src={image}
                     alt={title}
@@ -24,36 +24,35 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                     unoptimized
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <button className="absolute top-3 right-3 p-2.5 bg-white/90 backdrop-blur-sm rounded-full text-gray-400 hover:text-red-500 hover:scale-110 transition-all shadow-sm">
-                    <Icon icon="solar:heart-angle-outline" width="20" height="20" />
-                </button>
             </div>
 
-            <div className="px-3">
+            <div className="px-4 pt-1">
                 <div className="mb-1">
-                    <h3 className="font-bold text-gray-900 text-[15px] leading-tight">{title}</h3>
+                    <h3 className="font-bold text-[#1a1a1a] text-[14px] leading-tight line-clamp-1">{title}</h3>
                 </div>
-                <p className="text-[12px] text-gray-400 leading-snug mb-4 line-clamp-2 min-h-[34px] font-medium">
+                <p className="text-[10px] text-[#8b8b8b] leading-tight mb-3.5 min-h-[30px] font-medium">
                     {details}
                 </p>
 
-                <div className="font-extrabold text-[#f95e34] text-xl mb-4">
+                <div className="font-black text-[#1a1a1a] text-[16px] mb-3.5">
                     ₦{price.toLocaleString()}
                 </div>
 
-                <div className="flex items-center justify-between border border-gray-100 rounded-full p-1 bg-[#fafafa]">
+                <div className="flex items-center justify-between gap-2 w-full">
                     <button 
                         onClick={() => setQty(Math.max(0, qty - 1))}
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-gray-400 shadow-sm hover:text-gray-900 hover:bg-gray-50 transition-colors"
+                        className="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-[#CECECF] bg-[#f9f9f9] text-[#cececf] hover:text-[#8b8b8b] hover:bg-gray-100 transition-colors"
                     >
-                        <Icon icon="ic:round-minus" width="22" height="22" />
+                        <Icon icon="ic:round-minus" width="18" height="18" />
                     </button>
-                    <span className="font-bold text-gray-900 text-sm">{qty}</span>
+                    <div className="flex-1 h-8 flex items-center justify-center rounded-full bg-[#f9f9f9]">
+                        <span className="font-bold text-[#8b8b8b] text-[13px]">{qty}</span>
+                    </div>
                     <button 
                         onClick={() => setQty(qty + 1)}
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-[#ffece6] text-[#f95e34] shadow-sm hover:bg-[#ffd9cc] transition-colors"
+                        className="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-[#f95e34]/30 bg-[#fff5f2] text-[#f95e34] hover:bg-[#ffece6] transition-colors"
                     >
-                        <Icon icon="ic:round-plus" width="22" height="22" />
+                        <Icon icon="ic:round-plus" width="18" height="18" />
                     </button>
                 </div>
             </div>

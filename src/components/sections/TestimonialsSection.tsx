@@ -39,7 +39,7 @@ const TESTIMONIALS = [
 export default function TestimonialsSection() {
     return (
         <section className="mb-24 px-4 overflow-hidden">
-            <h2 className="text-3xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
                 What our customers says
             </h2>
 
@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
                 {TESTIMONIALS.map((testimonial, idx) => (
                     <div
                         key={idx}
-                        className="min-w-[300px] w-[300px] md:w-[350px] bg-white rounded-[32px] p-8 border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] shrink-0 snap-center hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300 flex flex-col"
+                        className="w-[85vw] min-w-[85vw] sm:w-[300px] sm:min-w-[300px] md:w-[350px] md:min-w-[350px] bg-white rounded-[32px] p-6 md:p-8 border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] shrink-0 snap-center hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300 flex flex-col"
                     >
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-[52px] h-[52px] rounded-full bg-gray-100 overflow-hidden relative shrink-0">

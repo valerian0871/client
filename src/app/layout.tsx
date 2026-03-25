@@ -11,7 +11,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Cakes N' Pastries Restaurant | Freshly Prepared Meals",
+  title: "Cakes N' Pastries Restaurant",
   description: "Order awesome Breakfast, African dishes, and continental meals prepared fresh daily. Enjoy our Best Sellers, Special Offers, and comfortable dining.",
   keywords: ["cakes", "pastries", "restaurant", "african dishes", "continental meals", "breakfast", "food delivery", "grills", "pasta"],
   icons: {

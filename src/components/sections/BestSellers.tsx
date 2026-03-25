@@ -1,5 +1,6 @@
 import SectionHeading from "../ui/SectionHeading";
 import FoodCard from "../ui/FoodCard";
+import { Icon } from "@iconify/react";
 
 const BEST_SELLERS = [
     { title: "Full Flame Grill Chicken", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 7500, image: "/images/food.png", quantity: 0 },
@@ -17,15 +18,20 @@ const BEST_SELLERS = [
 export default function BestSellers() {
     return (
         <section className="mb-16">
-            <SectionHeading 
-                title="Best Sellers" 
-                subtitle="All meals & pastries" 
-                showSeeAll={true} 
-            />
+            <div className="flex items-center justify-between mb-6 px-4 md:px-0">
+                <h2 className="text-[18px] md:text-[22px] font-semibold tracking-tight text-[#1a1a1a] flex items-center gap-1.5 md:gap-2">
+                    Best Sellers - <span className="text-[14px] md:text-[15px] font-bold tracking-normal">(Meal packs)</span>
+                </h2>
+                <span className="text-blue-500 font-bold text-[13px] md:text-[15px] flex items-center gap-1 cursor-pointer hover:underline">
+                    See all <Icon icon="solar:alt-arrow-right-line-duotone" width="16" height="16" className="hidden sm:block" />
+                </span>
+            </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 min-[1400px]:grid-cols-5 gap-6">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-wrap md:justify-center xl:justify-between xl:gap-y-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {BEST_SELLERS.map((item, idx) => (
-                    <FoodCard key={idx} {...item} />
+                    <div key={idx} className="shrink-0 snap-center flex justify-center">
+                        <FoodCard {...item} />
+                    </div>
                 ))}
             </div>
         </section>

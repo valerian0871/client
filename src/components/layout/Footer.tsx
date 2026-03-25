@@ -1,10 +1,12 @@
+import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#fdfaf7] pt-16 pb-8 border-t border-gray-100">
-            <div className="max-w-7xl mx-auto px-6 mt-12">
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
+        <footer className="w-full bg-[#fdfaf7] pt-12 md:pt-16 pb-8 border-t border-gray-100">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 mt-8 md:mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-8 mb-12 md:mb-16">
                     <div>
                         <h4 className="font-bold text-gray-900 mb-6 text-sm">Quick Links</h4>
                         <ul className="space-y-4 text-xs text-gray-500 font-semibold">
@@ -37,10 +39,10 @@ export default function Footer() {
                         <p className="text-xs text-gray-500 font-medium mb-4">
                             Get our latest offers and updates on new meals, fast release events all year.
                         </p>
-                        <div className="flex gap-2">
-                            <input 
-                                type="email" 
-                                placeholder="Enter your email address" 
+                        <div className="flex flex-col sm:flex-row gap-2">
+                            <input
+                                type="email"
+                                placeholder="Enter your email address"
                                 className="flex-1 px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-[#f95e34] bg-white text-sm"
                             />
                             <button className="px-8 py-3 bg-[#111] text-white rounded-full font-semibold hover:bg-gray-800 transition-colors text-sm shadow-md">
@@ -52,25 +54,22 @@ export default function Footer() {
 
                 <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gray-200 gap-6">
                     <div className="flex items-center gap-2">
-                        <span className="text-[#f95e34] font-extrabold text-4xl tracking-tighter">CP</span>
-                        <div className="flex flex-col">
-                            <span className="font-extrabold text-[#1a1a1a] text-[15px] leading-tight uppercase tracking-tight">Cakes N&apos; Pastries</span>
-                            <span className="font-bold text-[#1a1a1a] text-[11px] leading-tight uppercase tracking-[0.2em]">Restaurant</span>
-                        </div>
+                        <Image src="/images/Logo.svg" alt="Cakes N' Pastries Logo" width={48} height={48} className="h-10 w-auto md:h-12 object-contain" />
+                        <Image src="/images/lettering.png" alt="Cakes N' Pastries Lettering" width={150} height={40} className="h-7 w-auto md:h-9 object-contain" />
                     </div>
-                    
+
                     <div className="text-xs text-gray-500 font-medium text-center md:text-right flex flex-col gap-1 items-center md:items-end">
                         <p className="font-bold text-gray-800">Reach Out & Visit Us:</p>
                         <p>Email: support@cakesnpastries.com</p>
                         <p>Address: 12 Baker Street, G.R.A Phase 2, Port Harcourt</p>
                         <div className="flex gap-4 mt-2">
-                            <span className="font-bold text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors">IG</span>
-                            <span className="font-bold text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors">TW</span>
-                            <span className="font-bold text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors">YT</span>
+                            <Icon icon="ri:instagram-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
+                            <Icon icon="ri:twitter-x-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
+                            <Icon icon="ri:youtube-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="mt-8 text-center text-[10px] text-gray-400 font-medium">
                     © 2024 Cakes N&apos; Pastries. All Rights Reserved.
                 </div>

@@ -4,9 +4,10 @@ import Image from "next/image";
 export default function SpecialOffers() {
     return (
         <section className="mb-20">
-            <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl font-extrabold text-[#1a1a1a] tracking-tight">Our Special Offers</h2>
-                <div className="flex items-center gap-2">
+            <div className="flex items-center justify-between mb-6 px-4 md:px-0">
+                <h2 className="text-[19px] md:text-2xl font-extrabold text-[#1a1a1a] tracking-tight">Our Special Offers</h2>
+                <span className="text-blue-500 font-bold text-[13px] sm:hidden cursor-pointer hover:underline">See all</span>
+                <div className="hidden sm:flex items-center gap-2">
                     <button className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm">
                         <Icon icon="solar:alt-arrow-left-line-duotone" width="20" height="20" />
                     </button>
@@ -16,9 +17,9 @@ export default function SpecialOffers() {
                 </div>
             </div>
             
-            <div className="flex flex-col xl:flex-row gap-8">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-col xl:flex-row xl:gap-8 xl:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {/* Offer 1 */}
-                <div className="flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
                     <div className="p-8 md:p-10 md:pr-0 md:w-[60%] z-10 flex flex-col justify-center">
                         <h3 className="text-[32px] font-extrabold text-[#1a1a1a] leading-[1.1] mb-3 tracking-tight group-hover:text-[#f95e34] transition-colors duration-300">
                             Full Flame <br/> Grill Chicken
@@ -40,9 +41,9 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[6px] border-white rotate-12 transform scale-110 group-hover:rotate-24 transition-transform duration-500">
-                        <span className="text-4xl font-black leading-none tracking-tighter">50</span>
-                        <span className="text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[4px] md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-24 transition-transform duration-500">
+                        <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
+                        <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
                         <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
@@ -51,7 +52,7 @@ export default function SpecialOffers() {
                 </div>
 
                 {/* Offer 2 */}
-                <div className="flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
                     <div className="p-8 md:p-10 md:pr-0 md:w-[60%] z-10 flex flex-col justify-center">
                         <h3 className="text-[32px] font-extrabold text-[#1a1a1a] leading-[1.1] mb-3 tracking-tight group-hover:text-[#f95e34] transition-colors duration-300">
                             Burger <br/> Special
@@ -73,9 +74,9 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[6px] border-white rotate-12 transform scale-110 group-hover:rotate-0 transition-transform duration-500">
-                        <span className="text-4xl font-black leading-none tracking-tighter">50</span>
-                        <span className="text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[4px] md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-0 transition-transform duration-500">
+                        <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
+                        <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
                         <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />

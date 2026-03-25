@@ -1,52 +1,53 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export default function FeaturesSection() {
     return (
         <section className="mb-20 text-center">
-            <h4 className="text-[#f95e34] font-extrabold text-[13px] tracking-widest uppercase mb-3 text-center">
-                About Cakes N&apos; Pastries
+            <h4 className="text-[#f95e34] font-extrabold text-[12px] md:text-[13px] tracking-[0.2em] uppercase mb-2 md:mb-3 text-center">
+                ABOUT CAKESNPASTRIES
             </h4>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
+            <h2 className="text-[25px] leading-[1.1] md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-10 md:mb-12 text-center max-w-[200px] md:max-w-none mx-auto">
                 Our offers makes us different
             </h2>
             
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-16">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 justify-start md:justify-center items-center md:gap-8 mb-16 pb-4 px-4 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {/* Feature 1 */}
-                <div className="relative w-[240px] h-[340px] rounded-[120px] overflow-hidden group shadow-lg">
+                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
-                        <div className="w-full h-full bg-[#1a1a1a]"></div>
+                        <Image src="/images/about.png" alt="Daily Brewed Fresh Food" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-                    <div className="absolute bottom-8 left-0 right-0 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-lg leading-tight">Daily Brewed <br/> Fresh Food</h3>
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
+                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0 max-w-[120px] md:max-w-none">Daily Brewed <br className="md:hidden" /> & Fresh Food</h3>
                     </div>
                 </div>
                 
                 {/* Feature 2 */}
-                <div className="relative w-[240px] h-[340px] rounded-[120px] overflow-hidden group shadow-lg -translate-y-4 md:-translate-y-8">
+                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg translate-y-0 md:-translate-y-8 shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
-                        <div className="w-full h-full bg-[#8c3f2d]"></div>
+                        <Image src="/images/about.png" alt="Baking Services" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-                    <div className="absolute bottom-8 left-0 right-0 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-lg leading-tight">Baking <br/> Services</h3>
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
+                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0">Baking <br/> Services</h3>
                     </div>
                 </div>
                 
                 {/* Feature 3 */}
-                <div className="relative w-[240px] h-[340px] rounded-[120px] overflow-hidden group shadow-lg">
+                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
-                        <div className="w-full h-full bg-[#3f4a3c]"></div>
+                        <Image src="/images/about.png" alt="Co-working Space" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-                    <div className="absolute bottom-8 left-0 right-0 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-lg leading-tight">Co-working <br/> Space</h3>
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
+                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0">Co-working <br/> Space</h3>
                     </div>
                 </div>
             </div>
             
-            <div className="max-w-3xl mx-auto flex flex-col items-center">
+            <div className="max-w-3xl mx-auto flex flex-col items-center px-4 md:px-0">
                 <h3 className="text-xl font-extrabold text-[#1a1a1a] mb-4 text-center">Who We Are</h3>
                 <p className="text-gray-500 text-sm md:text-[15px] font-medium leading-[1.8] mb-6 text-center">
                     We are a modern restaurant based in Port Harcourt, Nigeria that prepares Nigerian and continental meals 
