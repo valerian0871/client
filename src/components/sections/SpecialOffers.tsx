@@ -16,13 +16,13 @@ export default function SpecialOffers() {
                     </button>
                 </div>
             </div>
-            
+
             <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-col xl:flex-row xl:gap-8 xl:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {/* Offer 1 */}
                 <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
                     <div className="p-8 md:p-10 md:pr-0 md:w-[60%] z-10 flex flex-col justify-center">
                         <h3 className="text-[32px] font-extrabold text-[#1a1a1a] leading-[1.1] mb-3 tracking-tight group-hover:text-[#f95e34] transition-colors duration-300">
-                            Full Flame <br/> Grill Chicken
+                            Full Flame <br /> Grill Chicken
                         </h3>
                         <p className="text-gray-500 text-[14px] font-medium mb-5 max-w-[220px] leading-snug">
                             Tender and juicy chicken well seasoned in a secret unique recipe.
@@ -41,7 +41,7 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[4px] md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-24 transition-transform duration-500">
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-4 md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-24 transition-transform duration-500">
                         <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
                         <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>
@@ -55,7 +55,7 @@ export default function SpecialOffers() {
                 <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[250px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
                     <div className="p-8 md:p-10 md:pr-0 md:w-[60%] z-10 flex flex-col justify-center">
                         <h3 className="text-[32px] font-extrabold text-[#1a1a1a] leading-[1.1] mb-3 tracking-tight group-hover:text-[#f95e34] transition-colors duration-300">
-                            Burger <br/> Special
+                            Burger <br /> Special
                         </h3>
                         <p className="text-gray-500 text-[14px] font-medium mb-5 max-w-[220px] leading-snug">
                             Tender and juicy beef burger with special natural and rich ground recipe.
@@ -74,7 +74,7 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-[4px] md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-0 transition-transform duration-500">
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-4 md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-0 transition-transform duration-500">
                         <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
                         <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>

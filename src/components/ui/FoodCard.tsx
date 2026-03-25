@@ -15,7 +15,7 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
     const [qty, setQty] = useState(quantity);
 
     return (
-        <div className="w-[240px] shrink-0 bg-white rounded-[32px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
+        <div className="w-[240px] h-[310px] shrink-0 bg-white rounded-[32px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
             <div className="relative w-full h-[140px] shrink-0 overflow-hidden mb-3 bg-gray-50">
                 <Image
                     src={image}
@@ -26,15 +26,15 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                 />
             </div>
 
-            <div className="px-4 pt-1">
+            <div className="px-4 pt-1 flex flex-col flex-1">
                 <div className="mb-1">
                     <h3 className="font-bold text-[#1a1a1a] text-[14px] leading-tight line-clamp-1">{title}</h3>
                 </div>
-                <p className="text-[10px] text-[#8b8b8b] leading-tight mb-3.5 min-h-[30px] font-medium">
+                <p className="text-[10px] text-[#8b8b8b] leading-tight min-h-[30px] font-medium">
                     {details}
                 </p>
 
-                <div className="font-black text-[#1a1a1a] text-[16px] mb-3.5">
+                <div className="font-black text-[#1a1a1a] text-[16px] mt-auto mb-3.5">
                     ₦{price.toLocaleString()}
                 </div>
 

@@ -13,9 +13,9 @@ const CATEGORIES = [
 
 export default function CategoriesMenu() {
     return (
-        <section className="mb-12">
-            <div className="flex items-center justify-between mb-6 gap-4 px-4 md:px-0">
-                <h2 className="text-xl md:text-2xl font-extrabold text-[#1a1a1a] tracking-tight">Our Menus</h2>
+        <section className="mb-12 max-w-[1334px] mx-auto h-auto md:h-[140px] px-4 md:px-0 flex flex-col justify-center">
+            <div className="flex items-center justify-between mb-4 gap-4">
+                <h2 className="text-[24px] md:text-[32px] font-bold tracking-[-0.03em] leading-tight text-[#1a1a1a]">Our menus</h2>
                 <span className="text-blue-500 font-bold text-[13px] sm:hidden cursor-pointer hover:underline">See all</span>
                 <div className="hidden sm:flex items-center gap-2">
                     <button className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm">

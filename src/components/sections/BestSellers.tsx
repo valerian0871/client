@@ -18,16 +18,16 @@ const BEST_SELLERS = [
 export default function BestSellers() {
     return (
         <section className="mb-16">
-            <div className="flex items-center justify-between mb-6 px-4 md:px-0">
-                <h2 className="text-[18px] md:text-[22px] font-semibold tracking-tight text-[#1a1a1a] flex items-center gap-1.5 md:gap-2">
-                    Best Sellers - <span className="text-[14px] md:text-[15px] font-bold tracking-normal">(Meal packs)</span>
+            <div className="flex items-center justify-between mb-6 px-4 md:px-0 max-w-[1296px] mx-auto">
+                <h2 className="text-[24px] md:text-[32px] font-bold tracking-[-0.03em] leading-[1.2] md:leading-[55px] text-[#1a1a1a] flex items-baseline gap-1.5 md:gap-2">
+                    Best Sellers - <span className="text-[18px] md:text-[24px] font-bold tracking-[-0.03em] leading-[1.2] md:leading-[55px]">(Meal packs)</span>
                 </h2>
                 <span className="text-blue-500 font-bold text-[13px] md:text-[15px] flex items-center gap-1 cursor-pointer hover:underline">
                     See all <Icon icon="solar:alt-arrow-right-line-duotone" width="16" height="16" className="hidden sm:block" />
                 </span>
             </div>
             
-            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-wrap md:justify-center xl:justify-between xl:gap-y-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-wrap md:justify-center xl:justify-start lg:gap-6 max-w-[1296px] mx-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {BEST_SELLERS.map((item, idx) => (
                     <div key={idx} className="shrink-0 snap-center flex justify-center">
                         <FoodCard {...item} />

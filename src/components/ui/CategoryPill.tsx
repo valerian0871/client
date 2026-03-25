@@ -6,18 +6,18 @@ interface CategoryPillProps {
     isActive?: boolean;
 }
 
-export default function CategoryPill({ title, image, isActive = false }: CategoryPillProps) {
-    return (
-        <button className={`flex items-center gap-3 p-1.5 pr-6 rounded-full border transition-all duration-300 whitespace-nowrap shadow-sm hover:shadow-md
-            ${isActive 
-                ? 'border-[#f95e34] bg-[#fff5f2]' 
-                : 'border-white bg-white hover:border-[#f95e34]/30'
-            }`}
-        >
-            <div className="w-11 h-11 rounded-full overflow-hidden relative shrink-0 bg-gray-100 shadow-sm">
+    export default function CategoryPill({ title, image, isActive = false }: CategoryPillProps) {
+        return (
+            <button className={`flex items-center shrink-0 w-[182px] h-[72px] gap-[10px] pl-[8px] pr-[24px] py-[8px] rounded-[32px] border transition-all duration-300 shadow-sm hover:shadow-md
+                ${isActive 
+                    ? 'border-[#f95e34] bg-[#fff5f2]' 
+                    : 'border-gray-200 bg-white hover:border-[#f95e34]/30'
+                }`}
+            >
+            <div className="w-[56px] h-[56px] rounded-full overflow-hidden relative shrink-0 bg-gray-100 shadow-sm">
                 <Image src={image} alt={title} fill className="object-cover" unoptimized />
             </div>
-            <span className={`font-bold text-sm tracking-tight ${isActive ? 'text-[#f95e34]' : 'text-gray-700'}`}>
+            <span className={`font-bold text-[14px] flex-1 truncate tracking-tight text-left ${isActive ? 'text-[#f95e34]' : 'text-gray-700'}`}>
                 {title}
             </span>
         </button>

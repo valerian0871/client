@@ -9,7 +9,7 @@ export default function Navbar() {
         <header className="w-full flex flex-col sticky top-0 z-50">
             {/* Top Bar */}
             <div className="w-full bg-[#FCF6F0] text-[11px] sm:text-[12px] font-semibold text-gray-700">
-                <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-1.5">
+                <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 md:px-6 py-1.5">
                     <div className="flex items-center gap-1.5 hover:text-black cursor-pointer transition-colors">
                         <Icon icon="solar:routing-2-bold-duotone" width="16" height="16" className="text-[#f95e34]" />
                         <span>Futa Southgate</span>
@@ -23,8 +23,8 @@ export default function Navbar() {
             </div>
 
             {/* Main Navbar */}
-            <div className="w-full bg-black">
-                <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-2.5">
+            <div className="w-full bg-[#100902] shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border-b border-gray-100">
+                <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 md:px-6 py-4">
                     {/* Logo Section */}
                     <Link href="/" className="flex items-center gap-2">
                         <Image src="/images/Logo.svg" alt="Cakes N' Pastries Logo" width={45} height={45} priority className="h-8 w-auto md:h-11 object-contain" />
@@ -33,9 +33,9 @@ export default function Navbar() {
 
                     {/* Nav Links */}
                     <nav className="hidden md:flex items-center gap-7 text-[14px] font-medium text-gray-100">
-                        <Link href="#" className="hover:text-white transition-colors">Food Menu</Link>
-                        <Link href="#" className="hover:text-white transition-colors">My Orders</Link>
-                        <Link href="#" className="flex items-center gap-2 hover:text-white transition-colors">
+                        <Link href="#" className="hover:text-orange transition-colors">Food Menu</Link>
+                        <Link href="#" className="hover:text-orange transition-colors">My Orders</Link>
+                        <Link href="#" className="flex items-center gap-2 hover:text-orange transition-colors">
                             <Icon icon="solar:bag-3-outline" width="20" height="20" />
                             Cart
                         </Link>
