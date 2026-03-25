@@ -35,8 +35,10 @@ export default function Navbar() {
                     <nav className="hidden md:flex items-center gap-7 text-[14px] font-medium text-gray-100">
                         <Link href="#" className="hover:text-orange transition-colors">Food Menu</Link>
                         <Link href="#" className="hover:text-orange transition-colors">My Orders</Link>
-                        <Link href="#" className="flex items-center gap-2 hover:text-orange transition-colors">
-                            <Icon icon="solar:bag-3-outline" width="20" height="20" />
+                        <Link href="#" className="flex items-center gap-2 hover:text-[#f95e34] transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width={22} height={22} viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.5 8.625L9 3.375m10.5 5.25L15 3.375m3.936 17.25H5.064a1.44 1.44 0 0 1-1.383-1.136l-2.138-9a1.484 1.484 0 0 1 1.383-1.864h18.148a1.484 1.484 0 0 1 1.383 1.864l-2.138 9a1.44 1.44 0 0 1-1.383 1.136m-11.436-9v6m4.5-6v6m4.5-6v6"></path>
+                            </svg>
                             Cart
                         </Link>
                         <Link href="#" className="px-5 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors font-bold text-[14px] ml-2">

@@ -41,9 +41,9 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-4 md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-24 transition-transform duration-500">
-                        <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
-                        <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 w-[100px] h-[100px] md:w-[120px] md:h-[120px] transform group-hover:scale-110 transition-transform duration-500">
+                        <Image src="/images/bubble.png" alt="" fill className="object-contain" unoptimized />
+                        <Image src="/images/50.png" alt="50% OFF" fill className="object-contain" unoptimized />
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
                         <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
@@ -74,9 +74,9 @@ export default function SpecialOffers() {
                         </div>
                     </div>
                     {/* Visual Badge */}
-                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 bg-linear-to-br from-[#8b5cf6] to-[#581c87] text-white w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex flex-col items-center justify-center shadow-xl border-4 md:border-[6px] border-white rotate-12 transform md:scale-110 group-hover:rotate-0 transition-transform duration-500">
-                        <span className="text-3xl md:text-4xl font-black leading-none tracking-tighter">50</span>
-                        <span className="text-[9px] md:text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
+                    <div className="absolute top-6 md:top-8 left-1/2 -translate-x-[60%] md:translate-x-0 md:left-auto md:right-[35%] z-20 w-[100px] h-[100px] md:w-[120px] md:h-[120px] transform group-hover:scale-110 transition-transform duration-500">
+                        <Image src="/images/bubble.png" alt="" fill className="object-contain" unoptimized />
+                        <Image src="/images/50.png" alt="50% OFF" fill className="object-contain" unoptimized />
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
                         <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
