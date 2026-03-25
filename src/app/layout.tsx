@@ -1,18 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -20,8 +11,26 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Cakes N' Pastries Restaurant",
-  description: "Order awesome Breakfast, African dishes, and continental meals prepared fresh daily.",
+  title: "Cakes N' Pastries Restaurant | Freshly Prepared Meals",
+  description: "Order awesome Breakfast, African dishes, and continental meals prepared fresh daily. Enjoy our Best Sellers, Special Offers, and comfortable dining.",
+  keywords: ["cakes", "pastries", "restaurant", "african dishes", "continental meals", "breakfast", "food delivery", "grills", "pasta"],
+  icons: {
+    icon: "/images/Logo.svg",
+    shortcut: "/images/Logo.svg",
+    apple: "/images/Logo.svg",
+  },
+  openGraph: {
+    title: "Cakes N' Pastries Restaurant",
+    description: "Order awesome Breakfast, African dishes, and continental meals prepared fresh daily.",
+    type: "website",
+    locale: "en_NG",
+    siteName: "Cakes N' Pastries",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cakes N' Pastries Restaurant",
+    description: "Order awesome Breakfast, African dishes, and continental meals prepared fresh daily.",
+  }
 };
 
 export default function RootLayout({
@@ -32,9 +41,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${nunito.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-white">
         <Navbar />
         <main className="flex-1 w-full mx-auto">
           {children}

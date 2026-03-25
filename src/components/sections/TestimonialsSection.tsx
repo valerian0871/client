@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 const TESTIMONIALS = [
@@ -7,7 +7,7 @@ const TESTIMONIALS = [
         role: "Customer",
         quote: "The food here is simply the best I have tasted in a long time. The customer service is top notch. I completely recommend Cakes and Pastries to anyone looking for a place to eat.",
         rating: 5,
-        avatar: "/placeholder.png",
+        avatar: "/images/testimonial.png",
         quoteColor: "text-[#f95e34]"
     },
     {
@@ -15,7 +15,7 @@ const TESTIMONIALS = [
         role: "Customer",
         quote: "Great food and ambience. They have basically everything in their menu. I have tried their pasta, rice, and snacks and I must say I am impressed.",
         rating: 5,
-        avatar: "/placeholder.png",
+        avatar: "/images/testimonial.png",
         quoteColor: "text-gray-600"
     },
     {
@@ -23,7 +23,7 @@ const TESTIMONIALS = [
         role: "Customer",
         quote: "I love the fact that I can order food online from them. Their delivery service is very fast and efficient. The food is always warm and tastes great.",
         rating: 5,
-        avatar: "/placeholder.png",
+        avatar: "/images/testimonial.png",
         quoteColor: "text-[#f95e34]"
     },
     {
@@ -31,7 +31,7 @@ const TESTIMONIALS = [
         role: "Customer",
         quote: "I have visited their physical location at GRA Port Harcourt and the experience was amazing. The staff are polite. I highly recommend.",
         rating: 5,
-        avatar: "/placeholder.png",
+        avatar: "/images/testimonial.png",
         quoteColor: "text-[#f95e34]"
     }
 ];
@@ -60,15 +60,17 @@ export default function TestimonialsSection() {
                         </div>
 
                         <p className={`${testimonial.quoteColor} font-bold text-[13px] leading-relaxed mb-6 flex-1`}>
-                            "{testimonial.quote}"
+                            &quot;{testimonial.quote}&quot;
                         </p>
 
                         <div className="flex gap-1.5 mt-auto">
                             {[...Array(5)].map((_, i) => (
-                                <Star
+                                <Icon
                                     key={i}
-                                    size={14}
-                                    className={i < testimonial.rating ? "fill-amber-400 text-amber-400" : "fill-gray-200 text-gray-200"}
+                                    icon="solar:star-bold"
+                                    width="16"
+                                    height="16"
+                                    className={i < testimonial.rating ? "text-amber-400" : "text-gray-200"}
                                 />
                             ))}
                         </div>

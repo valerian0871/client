@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { Icon } from "@iconify/react";
 
 export default function FeaturesSection() {
     return (
         <section className="mb-20 text-center">
             <h4 className="text-[#f95e34] font-extrabold text-[13px] tracking-widest uppercase mb-3 text-center">
-                About Cakes N' Pastries
+                About Cakes N&apos; Pastries
             </h4>
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
                 Our offers makes us different
@@ -58,7 +57,7 @@ export default function FeaturesSection() {
                     href="#" 
                     className="text-[#f95e34] font-bold text-sm tracking-wide hover:text-[#e04a22] transition-colors flex items-center gap-1 border-b-2 border-transparent hover:border-[#f95e34] pb-0.5"
                 >
-                    Read More About Us <ArrowRight size={14} strokeWidth={3} />
+                    Read More About Us <Icon icon="solar:arrow-right-line-duotone" width="16" height="16" />
                 </Link>
             </div>
         </section>

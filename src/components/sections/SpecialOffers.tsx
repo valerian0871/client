@@ -1,4 +1,5 @@
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export default function SpecialOffers() {
     return (
@@ -7,10 +8,10 @@ export default function SpecialOffers() {
                 <h2 className="text-2xl font-extrabold text-[#1a1a1a] tracking-tight">Our Special Offers</h2>
                 <div className="flex items-center gap-2">
                     <button className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm">
-                        <ChevronLeft size={18} strokeWidth={2.5} />
+                        <Icon icon="solar:alt-arrow-left-line-duotone" width="20" height="20" />
                     </button>
                     <button className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm">
-                        <ChevronRight size={18} strokeWidth={2.5} />
+                        <Icon icon="solar:alt-arrow-right-line-duotone" width="20" height="20" />
                     </button>
                 </div>
             </div>
@@ -33,7 +34,7 @@ export default function SpecialOffers() {
                             <button className="flex items-center gap-3 bg-[#111] text-white pl-6 pr-1.5 py-1.5 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-md group-hover:scale-105 origin-left">
                                 Order Now
                                 <div className="bg-white text-black rounded-full p-1.5 flex items-center justify-center">
-                                    <ArrowRight size={16} className="text-black stroke-[3px]" />
+                                    <Icon icon="solar:arrow-right-line-duotone" width="16" height="16" className="text-black" />
                                 </div>
                             </button>
                         </div>
@@ -44,8 +45,8 @@ export default function SpecialOffers() {
                         <span className="text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
-                        <span className="text-gray-300 font-bold mix-blend-overlay">Chicken Img</span>
-                        <div className="w-[300px] h-[300px] bg-amber-600/10 rounded-full blur-3xl absolute top-0 -right-10 group-hover:bg-amber-600/20 transition-colors duration-500"></div>
+                        <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+                        <div className="w-[300px] h-[300px] bg-amber-600/10 rounded-full blur-3xl absolute top-0 -right-10 group-hover:bg-amber-600/20 transition-colors duration-500 pointer-events-none"></div>
                     </div>
                 </div>
 
@@ -66,7 +67,7 @@ export default function SpecialOffers() {
                             <button className="flex items-center gap-3 bg-[#111] text-white pl-6 pr-1.5 py-1.5 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-md group-hover:scale-105 origin-left">
                                 Order Now
                                 <div className="bg-white text-black rounded-full p-1.5 flex items-center justify-center">
-                                    <ArrowRight size={16} className="text-black stroke-[3px]" />
+                                    <Icon icon="solar:arrow-right-line-duotone" width="16" height="16" className="text-black" />
                                 </div>
                             </button>
                         </div>
@@ -77,8 +78,8 @@ export default function SpecialOffers() {
                         <span className="text-[11px] font-black tracking-[0.2em] leading-none mt-1">% OFF</span>
                     </div>
                     <div className="relative h-[250px] md:h-auto md:w-[40%] bg-gray-50 flex items-center justify-center overflow-hidden">
-                        <span className="text-gray-300 font-bold mix-blend-overlay">Burger Img</span>
-                        <div className="w-[300px] h-[300px] bg-green-500/10 rounded-full blur-3xl absolute top-0 -right-10 group-hover:bg-green-500/20 transition-colors duration-500"></div>
+                        <Image src="/images/special.png" alt="Special Offer" fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+                        <div className="w-[300px] h-[300px] bg-green-500/10 rounded-full blur-3xl absolute top-0 -right-10 group-hover:bg-green-500/20 transition-colors duration-500 pointer-events-none"></div>
                     </div>
                 </div>
             </div>

@@ -54,7 +54,7 @@ export default function Footer() {
                     <div className="flex items-center gap-2">
                         <span className="text-[#f95e34] font-extrabold text-4xl tracking-tighter">CP</span>
                         <div className="flex flex-col">
-                            <span className="font-extrabold text-[#1a1a1a] text-[15px] leading-tight uppercase tracking-tight">Cakes N' Pastries</span>
+                            <span className="font-extrabold text-[#1a1a1a] text-[15px] leading-tight uppercase tracking-tight">Cakes N&apos; Pastries</span>
                             <span className="font-bold text-[#1a1a1a] text-[11px] leading-tight uppercase tracking-[0.2em]">Restaurant</span>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function Footer() {
                 </div>
                 
                 <div className="mt-8 text-center text-[10px] text-gray-400 font-medium">
-                    © 2024 Cakes N' Pastries. All Rights Reserved.
+                    © 2024 Cakes N&apos; Pastries. All Rights Reserved.
                 </div>
             </div>
         </footer>

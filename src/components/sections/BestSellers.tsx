@@ -2,16 +2,16 @@ import SectionHeading from "../ui/SectionHeading";
 import FoodCard from "../ui/FoodCard";
 
 const BEST_SELLERS = [
-    { title: "Full Flame Grill Chicken", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 7500, image: "/placeholder.png", quantity: 0 },
-    { title: "Jollof Rice & Grill Chicken", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4500, image: "/placeholder.png", quantity: 0 },
-    { title: "Fried Rice and Turkey", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5200, image: "/placeholder.png", quantity: 0 },
-    { title: "Ofada Rice and Assorted Meat", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 6500, image: "/placeholder.png", quantity: 0 },
-    { title: "Pounded Yam with Egusi Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5500, image: "/placeholder.png", quantity: 0 },
-    { title: "Beef Suya in Pitta", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 3500, image: "/placeholder.png", quantity: 0 },
-    { title: "Peppered Fish with Plantain", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5000, image: "/placeholder.png", quantity: 0 },
-    { title: "Goat Meat Spicy Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4000, image: "/placeholder.png", quantity: 0 },
-    { title: "Fisherman Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 10500, image: "/placeholder.png", quantity: 0 },
-    { title: "Stir fry spaghetti", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4500, image: "/placeholder.png", quantity: 0 },
+    { title: "Full Flame Grill Chicken", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 7500, image: "/images/food.png", quantity: 0 },
+    { title: "Jollof Rice & Grill Chicken", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4500, image: "/images/food.png", quantity: 0 },
+    { title: "Fried Rice and Turkey", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5200, image: "/images/food.png", quantity: 0 },
+    { title: "Ofada Rice and Assorted Meat", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 6500, image: "/images/food.png", quantity: 0 },
+    { title: "Pounded Yam with Egusi Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5500, image: "/images/food.png", quantity: 0 },
+    { title: "Beef Suya in Pitta", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 3500, image: "/images/food.png", quantity: 0 },
+    { title: "Peppered Fish with Plantain", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 5000, image: "/images/food.png", quantity: 0 },
+    { title: "Goat Meat Spicy Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4000, image: "/images/food.png", quantity: 0 },
+    { title: "Fisherman Soup", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 10500, image: "/images/food.png", quantity: 0 },
+    { title: "Stir fry spaghetti", details: "By the best chef in town, available in African Culinary, Grills and Pasta", price: 4500, image: "/images/food.png", quantity: 0 },
 ];
 
 export default function BestSellers() {

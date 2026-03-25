@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { Icon } from "@iconify/react";
 
 interface SectionHeadingProps {
     title: string;
@@ -26,7 +26,7 @@ export default function SectionHeading({ title, subtitle, showSeeAll, seeAllLink
                     className="flex items-center gap-1 text-[13px] font-bold text-[#f95e34] hover:text-[#e04a22] transition-colors"
                 >
                     See all
-                    <ChevronRight size={14} className="stroke-[3px]" />
+                    <Icon icon="solar:alt-arrow-right-line-duotone" width="16" height="16" />
                 </Link>
             )}
         </div>

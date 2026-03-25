@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export default function HeroSection() {
     return (
@@ -14,7 +15,7 @@ export default function HeroSection() {
                 <button className="flex items-center gap-3 bg-[#111] text-white pl-6 pr-2 py-2 rounded-full font-bold text-[13px] hover:bg-black transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                     Order Now
                     <div className="bg-white text-black rounded-full p-1.5 flex items-center justify-center">
-                        <ArrowRight size={16} className="text-black stroke-[3px]" />
+                        <Icon icon="solar:arrow-right-line-duotone" width="16" height="16" className="text-black" />
                     </div>
                 </button>
             </div>
@@ -24,7 +25,7 @@ export default function HeroSection() {
                 {/* Visual placeholder for the flying burger. In a real app, use Next.js Image component here */}
                 <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 rounded-full blur-3xl absolute top-1/2 -translate-y-1/2 right-[10%]"></div>
                 <div className="relative w-full h-full max-w-[500px] min-h-[300px] flex items-center justify-center">
-                    <span className="text-white/50 font-bold mix-blend-overlay">Burger Image Placeholder</span>
+                    <Image src="/images/hamburger.png" priority alt="Hero Burger" fill className="object-contain scale-[1.15] drop-shadow-[0_30px_50px_rgba(0,0,0,0.4)] hover:scale-[1.25] hover:-translate-y-4 transition-all duration-700 ease-out" unoptimized />
                 </div>
             </div>
         </section>

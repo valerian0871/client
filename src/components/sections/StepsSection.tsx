@@ -39,13 +39,14 @@ export default function StepsSection() {
                         
                         <div className="relative w-[100px] h-[100px] rounded-[32px] bg-[#fff5f2] mb-6 flex items-center justify-center transform group-hover:-translate-y-2 transition-transform duration-300">
                             {/* Step Number Badge */}
-                            <div className={`absolute -top-3 -left-3 w-8 h-8 rounded-full ${step.color} text-white font-black text-xs flex items-center justify-center shadow-lg border-4 border-white`}>
-                                {step.num}
+                            <div className={`absolute -top-3 -left-3 w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-4 border-white overflow-hidden bg-white z-20 hover:scale-110 transition-transform`}>
+                                <div className="absolute inset-0 flex items-center justify-center text-[#f95e34] font-black z-10">{step.num}</div>
+                                <Image src="/images/number.png" alt="Step Number" fill className="object-cover opacity-80" unoptimized />
                             </div>
                             
                             {/* Placeholder for Icon */}
-                            <div className="w-12 h-12 bg-[#f95e34]/20 rounded-2xl flex items-center justify-center text-[#f95e34] font-bold text-[10px] mix-blend-multiply uppercase tracking-widest border border-[#f95e34]/10">
-                                Icon
+                            <div className="w-20 h-20 relative flex items-center justify-center rounded-2xl drop-shadow-md">
+                                <Image src="/images/steps.png" alt="Step Icon" fill className="object-contain p-2" unoptimized />
                             </div>
                         </div>
                         

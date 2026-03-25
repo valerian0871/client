@@ -1,5 +1,7 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import { Heart, Minus, Plus } from "lucide-react";
+import { Icon } from "@iconify/react";
 
 interface FoodCardProps {
     title: string;
@@ -10,6 +12,8 @@ interface FoodCardProps {
 }
 
 export default function FoodCard({ title, details, price, image, quantity = 0 }: FoodCardProps) {
+    const [qty, setQty] = useState(quantity);
+
     return (
         <div className="bg-white rounded-[32px] p-2 pb-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] border border-gray-100/50 flex flex-col group hover:shadow-lg transition-all duration-300">
             <div className="relative w-full aspect-4/3 rounded-[24px] overflow-hidden mb-4 bg-gray-50">
@@ -21,7 +25,7 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <button className="absolute top-3 right-3 p-2.5 bg-white/90 backdrop-blur-sm rounded-full text-gray-400 hover:text-red-500 hover:scale-110 transition-all shadow-sm">
-                    <Heart size={18} />
+                    <Icon icon="solar:heart-angle-outline" width="20" height="20" />
                 </button>
             </div>
 
@@ -38,12 +42,18 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                 </div>
 
                 <div className="flex items-center justify-between border border-gray-100 rounded-full p-1 bg-[#fafafa]">
-                    <button className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-gray-400 shadow-sm hover:text-gray-900 hover:bg-gray-50 transition-colors">
-                        <Minus size={18} />
+                    <button 
+                        onClick={() => setQty(Math.max(0, qty - 1))}
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-gray-400 shadow-sm hover:text-gray-900 hover:bg-gray-50 transition-colors"
+                    >
+                        <Icon icon="ic:round-minus" width="22" height="22" />
                     </button>
-                    <span className="font-bold text-gray-900 text-sm">{quantity}</span>
-                    <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[#ffece6] text-[#f95e34] shadow-sm hover:bg-[#ffd9cc] transition-colors">
-                        <Plus size={18} />
+                    <span className="font-bold text-gray-900 text-sm">{qty}</span>
+                    <button 
+                        onClick={() => setQty(qty + 1)}
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-[#ffece6] text-[#f95e34] shadow-sm hover:bg-[#ffd9cc] transition-colors"
+                    >
+                        <Icon icon="ic:round-plus" width="22" height="22" />
                     </button>
                 </div>
             </div>

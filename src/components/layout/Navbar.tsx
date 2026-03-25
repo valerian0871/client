@@ -1,39 +1,53 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
+import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <header className="w-full bg-black border-b border-gray-100 sticky top-0 z-50 font-nunito">
-            <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-                {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
-                    <span className="text-[#f95e34] font-extrabold text-3xl tracking-tighter">
-                        CP
-                    </span>
-                    <div className="flex flex-col">
-                        <span className="font-extrabold text-[#1a1a1a] text-sm leading-tight uppercase tracking-tight">
-                            Cakes N' Pastries
-                        </span>
-                        <span className="font-bold text-[#1a1a1a] text-[10px] leading-tight uppercase tracking-widest">
-                            Restaurant
-                        </span>
+        <header className="w-full flex flex-col sticky top-0 z-50">
+            {/* Top Bar */}
+            <div className="hidden sm:block w-full bg-[#FCF6F0] text-[12px] font-semibold text-gray-700">
+                <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-1.5">
+                    <div className="flex items-center gap-1.5 hover:text-black cursor-pointer transition-colors">
+                        <Icon icon="solar:routing-2-bold-duotone" width="16" height="16" className="text-[#f95e34]" />
+                        <span>Futa Southgate</span>
                     </div>
-                </Link>
+                    <div className="flex items-center gap-6">
+                        <Link href="#" className="hover:text-black transition-colors">About Cakes&apos;n&apos;Pastries</Link>
+                        <Link href="#" className="hover:text-black transition-colors">FAQs</Link>
+                        <span className="font-bold text-black text-[13px]">070-555-555-54</span>
+                    </div>
+                </div>
+            </div>
 
-                {/* Nav Links */}
-                <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-800">
-                    <Link href="#" className="hover:text-[#f95e34] transition-colors">Food Menu</Link>
-                    <Link href="#" className="hover:text-[#f95e34] transition-colors">My Orders</Link>
-                    <Link href="#" className="flex items-center gap-2 hover:text-[#f95e34] transition-colors">
-                        <ShoppingCart size={18} />
-                        Cart
+            {/* Main Navbar */}
+            <div className="w-full bg-black">
+                <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-2.5">
+                    {/* Logo Section */}
+                    <Link href="/" className="flex items-center gap-2">
+                        <Image src="/images/Logo.svg" alt="Cakes N' Pastries Logo" width={220} height={45} priority className="h-9 w-auto md:h-11 object-contain" />
                     </Link>
-                    <Link href="#" className="px-5 py-2 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
-                        Log In/Sign Up
-                    </Link>
-                </nav>
+
+                    {/* Nav Links */}
+                    <nav className="hidden md:flex items-center gap-7 text-[14px] font-medium text-gray-100">
+                        <Link href="#" className="hover:text-white transition-colors">Food Menu</Link>
+                        <Link href="#" className="hover:text-white transition-colors">My Orders</Link>
+                        <Link href="#" className="flex items-center gap-2 hover:text-white transition-colors">
+                            <Icon icon="solar:bag-3-outline" width="20" height="20" />
+                            Cart
+                        </Link>
+                        <Link href="#" className="px-5 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors font-bold text-[14px] ml-2">
+                            Log In /Sign Up
+                        </Link>
+                    </nav>
+
+                    {/* Mobile Menu Button */}
+                    <button className="md:hidden text-white p-2">
+                        <Icon icon="solar:hamburger-menu-line-duotone" width="28" height="28" />
+                    </button>
+                </div>
             </div>
         </header>
     );
