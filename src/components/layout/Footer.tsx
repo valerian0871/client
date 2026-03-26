@@ -58,20 +58,19 @@ export default function Footer() {
                         <Image src="/images/lettering.png" alt="Cakes N' Pastries Lettering" width={150} height={40} className="h-7 w-auto md:h-9 object-contain" />
                     </div>
 
-                    <div className="text-xs text-gray-500 font-medium text-center md:text-right flex flex-col gap-1 items-center md:items-end">
-                        <p className="font-bold text-gray-800">Reach Out & Visit Us:</p>
+                    <div className="text-xs text-[#1a1a1a] font-medium text-center md:text-left flex flex-col gap-2 items-center md:items-start max-w-sm">
+                        <p>Phone: 0903 456 7890</p>
                         <p>Email: support@cakesnpastries.com</p>
-                        <p>Address: 12 Baker Street, G.R.A Phase 2, Port Harcourt</p>
-                        <div className="flex gap-4 mt-2">
-                            <Icon icon="ri:instagram-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
-                            <Icon icon="ri:twitter-x-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
-                            <Icon icon="ri:youtube-fill" className="text-xl text-gray-400 cursor-pointer hover:text-[#f95e34] transition-colors" />
+                        <p>Address: 12 Green Street, GRA Phase 2, Port Harcourt</p>
+                        <div className="flex gap-4 mt-2 mb-2">
+                            <Icon icon="ri:instagram-fill" className="text-xl cursor-pointer hover:text-[#f95e34] transition-colors" />
+                            <Icon icon="ri:twitter-x-line" className="text-xl cursor-pointer hover:text-[#f95e34] transition-colors" />
+                            <Icon icon="ri:youtube-fill" className="text-xl cursor-pointer hover:text-[#f95e34] transition-colors" />
                         </div>
+                        <p className="text-[11px] text-[#8b8b8b] font-medium">
+                            © 2025 Cakes &apos;n&apos; Pastries. All rights reserved.
+                        </p>
                     </div>
-                </div>
-
-                <div className="mt-8 text-center text-[10px] text-gray-400 font-medium">
-                    © 2024 Cakes N&apos; Pastries. All Rights Reserved.
                 </div>
             </div>
         </footer>

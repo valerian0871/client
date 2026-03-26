@@ -15,14 +15,14 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
     const [qty, setQty] = useState(quantity);
 
     return (
-        <div className="w-[240px] h-[310px] shrink-0 bg-white rounded-[32px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
-            <div className="relative w-full h-[140px] shrink-0 overflow-hidden mb-3 bg-gray-50">
+        <div className="w-[240px] h-[310px] shrink-0 bg-white rounded-[20px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
+            <div className="relative w-full h-[146px] shrink-0 overflow-hidden mb-3 bg-gray-50 border-b border-[#CECECF] rounded-[20px]">
                 <Image
                     src={image}
                     alt={title}
                     fill
                     unoptimized
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-[20px]"
                 />
             </div>
 

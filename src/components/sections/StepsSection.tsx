@@ -4,19 +4,19 @@ const STEPS = [
     {
         num: "1",
         title: "Explore and Choose",
-        desc: "Choose your favorite meals/pastry from our diverse menu. You'll definitely love our options.",
+        desc: "Check out our menu of meals, pastries, and drinks. Choose your dish, customize it, and add it to your cart.",
         color: "bg-[#f95e34]"
     },
     {
         num: "2",
         title: "Place Your Order",
-        desc: "Checkout, and proceed to payment using any of the available options online.",
+        desc: "Check out / Pay, select delivery or pickup, and finalize your payment. It's quick, easy, and secure.",
         color: "bg-[#4ade80]"
     },
     {
         num: "3",
         title: "We Cook and Deliver",
-        desc: "We prepare your meal fresh and deliver to your address within our delivery areas fast.",
+        desc: "We prepare your meal fresh and deliver it to your doorstep or have it ready for pickup.",
         color: "bg-[#f95e34]"
     }
 ];
@@ -25,7 +25,7 @@ export default function StepsSection() {
     return (
         <section className="mb-24 text-center">
             <h2 className="text-3xl font-extrabold text-[#1a1a1a] tracking-tight mb-16 text-center">
-                Easy order in 3 Steps
+                Easy order In 3 Steps
             </h2>
             
             <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-4xl mx-auto">
@@ -39,9 +39,8 @@ export default function StepsSection() {
                         
                         <div className="relative w-[100px] h-[100px] rounded-[32px] bg-[#fff5f2] mb-6 flex items-center justify-center transform group-hover:-translate-y-2 transition-transform duration-300">
                             {/* Step Number Badge */}
-                            <div className={`absolute -top-3 -left-3 w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-4 border-white overflow-hidden bg-white z-20 hover:scale-110 transition-transform`}>
-                                <div className="absolute inset-0 flex items-center justify-center text-[#f95e34] font-black z-10">{step.num}</div>
-                                <Image src="/images/number.png" alt="Step Number" fill className="object-cover opacity-80" unoptimized />
+                            <div className={`absolute -top-1 -left-1 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shadow-md border-4 border-white overflow-hidden bg-[#ff4a11] text-white font-extrabold text-sm sm:text-base z-20 hover:scale-110 transition-transform`}>
+                                {step.num}
                             </div>
                             
                             {/* Placeholder for Icon */}
