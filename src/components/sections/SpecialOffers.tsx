@@ -17,10 +17,13 @@ export default function SpecialOffers() {
                 </div>
             </div>
 
-            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 px-4 md:px-0 md:flex-col xl:flex-row xl:gap-8 xl:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-                {/* Offer 1 */}
-                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[300px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
-                    <div className="p-8 md:p-10 md:pr-4 z-10 flex flex-col justify-center md:w-[55%]">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-10 px-4 md:px-0 md:flex-col xl:flex-row xl:gap-8 xl:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                {/* Offer 1 — Chicken */}
+                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[300px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300" style={{ overflow: "visible" }}>
+                    {/* Rounded background clip for the card face only */}
+                    <div className="absolute inset-0 rounded-[40px] overflow-hidden pointer-events-none z-0 bg-white" />
+
+                    <div className="p-8 md:p-10 md:pr-4 z-10 flex flex-col justify-center md:w-[52%] relative">
                         <h3 className="text-[28px] md:text-[36px] font-extrabold text-[#1a1a1a] leading-[1.05] mb-4 tracking-[-0.03em]">
                             Full Flame <br /> Grill Chicken
                         </h3>
@@ -40,21 +43,34 @@ export default function SpecialOffers() {
                             </button>
                         </div>
                     </div>
-                    
-                    {/* Layered Visual Badge */}
-                    <div className="absolute top-10 right-4 md:right-[38%] z-30 w-[110px] h-[110px] md:w-[150px] md:h-[150px] pointer-events-none drop-shadow-sm transform group-hover:scale-[1.05] transition-transform duration-500">
-                        <Image src="/images/BUBBLE.png" alt="" fill className="object-contain" unoptimized priority />
-                        <Image src="/images/50%.png" alt="50% OFF" fill className="object-contain" unoptimized priority />
+
+                    {/* 50% OFF Badge — SVG layers */}
+                    <div className="absolute top-8 right-4 md:right-[40%] z-30 w-[110px] h-[110px] md:w-[140px] md:h-[140px] pointer-events-none transform group-hover:scale-[1.05] transition-transform duration-500">
+                        <Image src="/images/bubble.svg" alt="" fill className="object-contain" unoptimized priority />
+                        <Image src="/images/50.svg" alt="50% OFF" fill className="object-contain" unoptimized priority />
                     </div>
-                    
-                    <div className="relative h-[250px] md:h-auto md:absolute md:inset-y-0 md:right-0 md:w-[60%] flex items-center justify-center pointer-events-none z-0">
-                        <Image src="/images/special.png" alt="Special Offer" fill className="object-cover object-left md:object-right hover:scale-105 transition-transform duration-500" unoptimized />
+
+                    {/* Chicken — full image overflowing the card top */}
+                    <div className="hidden md:block absolute bottom-0 right-0 w-[52%] z-20 pointer-events-none" style={{ height: "120%" }}>
+                        <Image
+                            src="/images/special.png"
+                            alt="Full Flame Grill Chicken"
+                            fill
+                            className="object-contain object-bottom-right drop-shadow-xl hover:scale-105 transition-transform duration-500"
+                            unoptimized
+                        />
+                    </div>
+                    {/* Mobile food image */}
+                    <div className="relative h-[220px] md:hidden w-full overflow-hidden rounded-b-[40px]">
+                        <Image src="/images/special.png" alt="Full Flame Grill Chicken" fill className="object-cover object-center" unoptimized />
                     </div>
                 </div>
 
-                {/* Offer 2 */}
-                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] overflow-hidden border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[300px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300">
-                    <div className="p-8 md:p-10 md:pr-4 z-10 flex flex-col justify-center md:w-[55%]">
+                {/* Offer 2 — Burger */}
+                <div className="shrink-0 w-[85vw] snap-center md:w-auto flex-1 bg-white rounded-[40px] border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] flex flex-col md:flex-row relative min-h-[300px] group hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300" style={{ overflow: "visible" }}>
+                    <div className="absolute inset-0 rounded-[40px] overflow-hidden pointer-events-none z-0 bg-white" />
+
+                    <div className="p-8 md:p-10 md:pr-4 z-10 flex flex-col justify-center md:w-[52%] relative">
                         <h3 className="text-[28px] md:text-[36px] font-extrabold text-[#1a1a1a] leading-[1.05] mb-4 tracking-[-0.03em]">
                             Burger <br /> Special
                         </h3>
@@ -74,15 +90,26 @@ export default function SpecialOffers() {
                             </button>
                         </div>
                     </div>
-                    
-                    {/* Layered Visual Badge */}
-                    <div className="absolute top-10 right-4 md:right-[38%] z-30 w-[110px] h-[110px] md:w-[150px] md:h-[150px] pointer-events-none drop-shadow-sm transform group-hover:scale-[1.05] transition-transform duration-500">
-                        <Image src="/images/BUBBLE.png" alt="" fill className="object-contain" unoptimized priority />
-                        <Image src="/images/50%.png" alt="50% OFF" fill className="object-contain" unoptimized priority />
+
+                    {/* 50% OFF Badge — SVG layers */}
+                    <div className="absolute top-8 right-4 md:right-[40%] z-30 w-[110px] h-[110px] md:w-[140px] md:h-[140px] pointer-events-none transform group-hover:scale-[1.05] transition-transform duration-500">
+                        <Image src="/images/bubble.svg" alt="" fill className="object-contain" unoptimized priority />
+                        <Image src="/images/50.svg" alt="50% OFF" fill className="object-contain" unoptimized priority />
                     </div>
-                    
-                    <div className="relative h-[250px] md:h-auto md:absolute md:inset-y-0 md:right-0 md:w-[60%] flex items-center justify-center pointer-events-none z-0">
-                        <Image src="/images/special.png" alt="Special Offer" fill className="object-cover object-left md:object-right hover:scale-105 transition-transform duration-500" unoptimized />
+
+                    {/* Burger — full image overflowing the card top */}
+                    <div className="hidden md:block absolute bottom-0 right-0 w-[52%] z-20 pointer-events-none" style={{ height: "120%" }}>
+                        <Image
+                            src="/images/hamburger.png"
+                            alt="Burger Special"
+                            fill
+                            className="object-contain object-bottom-right drop-shadow-xl hover:scale-105 transition-transform duration-500"
+                            unoptimized
+                        />
+                    </div>
+                    {/* Mobile food image */}
+                    <div className="relative h-[220px] md:hidden w-full overflow-hidden rounded-b-[40px]">
+                        <Image src="/images/hamburger.png" alt="Burger Special" fill className="object-cover object-center" unoptimized />
                     </div>
                 </div>
             </div>
