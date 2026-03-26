@@ -3,42 +3,43 @@ import Image from "next/image";
 
 const TESTIMONIALS = [
     {
-        name: "Amina A.",
+        name: "Amaka O.",
         role: "Customer",
-        quote: "The food here is simply the best I have tasted in a long time. The customer service is top notch. I completely recommend Cakes and Pastries to anyone looking for a place to eat.",
+        headline: `"The best cake experience I've had in a long time."`,
+        body: "Cakes 'n' Pastries nailed my daughter's birthday cake. It looked amazing and tasted even better. Everyone kept asking where I got it from.",
         rating: 5,
-        avatar: "/images/testimonial.png",
-        quoteColor: "text-[#f95e34]"
+        avatar: "/images/testimonial.png"
     },
     {
-        name: "Daniel C.",
+        name: "Daniel K.",
         role: "Customer",
-        quote: "Great food and ambience. They have basically everything in their menu. I have tried their pasta, rice, and snacks and I must say I am impressed.",
+        headline: `"Fresh, soft and always consistent."`,
+        body: "I've ordered their pastries more than five times now. It's the same great quality every single time. They never disappoint.",
         rating: 5,
-        avatar: "/images/testimonial.png",
-        quoteColor: "text-gray-600"
+        avatar: "/images/testimonial.png"
     },
     {
-        name: "Carol A.",
+        name: "Kemi A.",
         role: "Customer",
-        quote: "I love the fact that I can order food online from them. Their delivery service is very fast and efficient. The food is always warm and tastes great.",
+        headline: `"Their food and baked items are top notch."`,
+        body: "Apart from their cakes, I love that they also serve proper meals. It makes the place a one-stop spot for lunch, snacks and small chops.",
         rating: 5,
-        avatar: "/images/testimonial.png",
-        quoteColor: "text-[#f95e34]"
+        avatar: "/images/testimonial.png"
     },
     {
-        name: "Emeka U.",
+        name: "Chinedu A.",
         role: "Customer",
-        quote: "I have visited their physical location at GRA Port Harcourt and the experience was amazing. The staff are polite. I highly recommend.",
+        headline: `"Delivery was quick and well packaged."`,
+        body: "I ordered a cake and small chops for a small office celebration. Everything arrived on time and still fresh. Really impressed.",
         rating: 5,
-        avatar: "/images/testimonial.png",
-        quoteColor: "text-[#f95e34]"
+        avatar: "/images/testimonial.png"
     }
 ];
 
 export default function TestimonialsSection() {
     return (
         <section className="mb-24 px-4 overflow-hidden">
+            <hr className="max-w-6xl mx-auto border-gray-100 mb-12 md:mb-16" />
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
                 What our customers says
             </h2>
@@ -47,9 +48,9 @@ export default function TestimonialsSection() {
                 {TESTIMONIALS.map((testimonial, idx) => (
                     <div
                         key={idx}
-                        className="w-[85vw] min-w-[85vw] sm:w-[300px] sm:min-w-[300px] md:w-[350px] md:min-w-[350px] bg-white rounded-[32px] p-6 md:p-8 border border-gray-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] shrink-0 snap-center hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.1)] transition-shadow duration-300 flex flex-col"
+                        className="w-[270px] min-w-[270px] h-[310px] bg-white rounded-[10px] p-6 border border-[#e8e8e8] shrink-0 snap-center flex flex-col shadow-none"
                     >
-                        <div className="flex items-center gap-4 mb-6">
+                        <div className="flex items-center gap-4 mb-4">
                             <div className="w-[52px] h-[52px] rounded-full bg-gray-100 overflow-hidden relative shrink-0">
                                 <Image src={testimonial.avatar} alt={testimonial.name} fill className="object-cover" unoptimized />
                             </div>
@@ -59,8 +60,11 @@ export default function TestimonialsSection() {
                             </div>
                         </div>
 
-                        <p className={`${testimonial.quoteColor} font-bold text-[13px] leading-relaxed mb-6 flex-1`}>
-                            &quot;{testimonial.quote}&quot;
+                        <h5 className="text-[#f95e34] font-bold text-[13px] leading-normal mb-2">
+                            {testimonial.headline}
+                        </h5>
+                        <p className="text-[#555] text-[11px] leading-relaxed mb-4 flex-1">
+                            {testimonial.body}
                         </p>
 
                         <div className="flex gap-1.5 mt-auto">

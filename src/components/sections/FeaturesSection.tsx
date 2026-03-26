@@ -5,44 +5,44 @@ import Image from "next/image";
 export default function FeaturesSection() {
     return (
         <section className="mb-20 text-center">
-            <h4 className="text-[#f95e34] font-extrabold text-[12px] md:text-[13px] tracking-[0.2em] uppercase mb-2 md:mb-3 text-center">
-                ABOUT CAKESNPASTRIES
+            <h4 className="font-extrabold text-[#f95e34] text-[24px] leading-[34px] tracking-[-0.03em] uppercase mb-2 md:mb-3 text-center align-middle">
+                About Cake'n'Pastries
             </h4>
-            <h2 className="text-[25px] leading-[1.1] md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-10 md:mb-12 text-center max-w-[200px] md:max-w-none mx-auto">
+            <h2 className="text-[48px] leading-[48px] md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-10 md:mb-12 text-center max-w-[200px] md:max-w-none mx-auto">
                 Our offers makes us different
             </h2>
 
-            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 justify-start md:justify-center items-center md:gap-8 mb-16 pb-4 px-4 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-3 justify-start md:justify-center items-center md:w-[696px] md:h-[346px] md:mx-auto mb-16 pb-4 md:pb-0 px-4 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {/* Feature 1 */}
-                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg shrink-0 snap-center">
+                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
-                        <Image src="/images/about.png" alt="Daily Brewed Fresh Food" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
+                        <Image src="/images/about.png" alt="Daily Menu & Fresh Food" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
                     <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
-                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0 max-w-[120px] md:max-w-none">Daily Brewed <br className="md:hidden" /> & Fresh Food</h3>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center md:justify-end md:pb-10 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight">Daily Menu & <br /> Fresh Food</h3>
                     </div>
                 </div>
 
                 {/* Feature 2 */}
-                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg translate-y-0 md:-translate-y-8 shrink-0 snap-center">
+                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
                         <Image src="/images/about.png" alt="Baking Services" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
                     <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
-                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0">Baking <br /> Services</h3>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center md:justify-end md:pb-10 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight">Baking <br /> Services</h3>
                     </div>
                 </div>
 
                 {/* Feature 3 */}
-                <div className="relative w-[150px] h-[150px] md:w-[240px] md:h-[340px] rounded-full md:rounded-[120px] overflow-hidden group shadow-lg shrink-0 snap-center">
+                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
                         <Image src="/images/about.png" alt="Co-working Space" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
                     <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-500"></div>
-                    <div className="absolute inset-0 flex items-center justify-center md:items-end md:pb-8 text-center z-10 px-4">
-                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight md:mb-0">Co-working <br /> Space</h3>
+                    <div className="absolute inset-0 flex flex-col items-center justify-center md:justify-end md:pb-10 text-center z-10 px-4">
+                        <h3 className="text-white font-bold text-[13px] md:text-lg leading-tight">Co-working <br /> Space</h3>
                     </div>
                 </div>
             </div>

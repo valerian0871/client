@@ -13,7 +13,7 @@ const CATEGORIES = [
 
 export default function CategoriesMenu() {
     return (
-        <section className="mb-12 h-auto md:h-[140px] px-4 md:px-0 flex flex-col justify-center">
+        <section className="mb-12 h-auto md:h-[140px] px-4 md:px-0 flex flex-col justify-center border-t border-gray-100 pt-4">
             <div className="flex items-center justify-between mb-4 gap-4">
                 <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[55px] text-[#1a1a1a]">Our menus</h2>
                 <span className="text-blue-500 font-bold text-[13px] sm:hidden cursor-pointer hover:underline">See all</span>
@@ -27,7 +27,7 @@ export default function CategoriesMenu() {
                 </div>
             </div>
             
-            <div className="flex items-center gap-4 overflow-x-auto pb-2 pt-1 px-1 -mx-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex items-center gap-[18px] w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {CATEGORIES.map((cat, idx) => (
                     <CategoryPill 
                         key={idx} 

@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className="w-full bg-[#FCF6F0] text-[11px] sm:text-[12px] font-semibold text-gray-700">
                 <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 md:px-6 py-1.5">
                     <div className="flex items-center gap-1.5 hover:text-black cursor-pointer transition-colors">
-                        <Icon icon="solar:routing-2-bold-duotone" width="16" height="16" className="text-[#f95e34]" />
+                        <Icon icon="solar:map-point-bold-duotone" width="18" height="18" className="text-[#f95e34]" />
                         <span>Futa Southgate</span>
                     </div>
                     <div className="flex items-center gap-4 sm:gap-6">
