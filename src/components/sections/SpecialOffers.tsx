@@ -44,13 +44,13 @@ export default function SpecialOffers() {
                 <div className="hidden sm:flex items-center gap-2">
                     <button
                         onClick={() => scroll("left")}
-                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm"
+                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#ff4700] hover:text-[#ff4700] transition-colors bg-white shadow-sm"
                     >
                         <Icon icon="solar:alt-arrow-left-line-duotone" width="20" height="20" />
                     </button>
                     <button
                         onClick={() => scroll("right")}
-                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#f95e34] hover:text-[#f95e34] transition-colors bg-white shadow-sm"
+                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#ff4700] hover:text-[#ff4700] transition-colors bg-white shadow-sm"
                     >
                         <Icon icon="solar:alt-arrow-right-line-duotone" width="20" height="20" />
                     </button>
@@ -101,21 +101,19 @@ export default function SpecialOffers() {
                             />
                         </div>
 
-                        {/* ── Badge: sits at the seam between text and image ── */}
-                        <div className="absolute top-8 left-[58%] -translate-x-1/2 z-30 w-[240px] h-[216px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
-                            {/* bubble is the purple background */}
-                            <Image
-                                src="/images/bubble.svg"
-                                alt=""
-                                fill
-                                className="object-contain"
-                                unoptimized
-                                priority
-                            /> 
-                        </div>
-                        {/* 50% OFF text sits on top */}
-                        <div className="absolute top-16 left-[58%] -translate-x-1/2 z-30 w-[160px] h-[80px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
+                        {/* ── Badge: sits on the chicken ── */}
+                        <div className="absolute top-10 right-[15%] z-30 w-[190px] h-[190px] pointer-events-none group-hover:scale-105 transition-transform duration-300 flex flex-col items-center justify-center">
                             <div className="absolute inset-0">
+                                <Image
+                                    src="/images/bubble.svg"
+                                    alt=""
+                                    fill
+                                    className="object-contain"
+                                    unoptimized
+                                    priority
+                                /> 
+                            </div>
+                            <div className="relative w-[70%] h-[70%] mb-[5%] mr-[2%] z-10">
                                 <Image
                                     src="/images/50.svg"
                                     alt="50% OFF"
@@ -124,7 +122,8 @@ export default function SpecialOffers() {
                                     unoptimized
                                     priority
                                 />
-                            </div></div>
+                            </div>
+                        </div>
 
                     </div>
                 ))}
