@@ -15,14 +15,14 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
     const [qty, setQty] = useState(quantity);
 
     return (
-        <div className="w-[240px] h-[310px] shrink-0 bg-white rounded-[20px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
+        <div className="w-[240px] h-[310px] shrink-0 bg-white rounded-[32px] pb-4 border border-[#CECECF] flex flex-col group overflow-hidden transition-all duration-300">
             <div className="relative w-full h-[146px] shrink-0 overflow-hidden mb-3 bg-gray-50 border-b border-[#CECECF] rounded-[20px]">
                 <Image
                     src={image}
                     alt={title}
                     fill
                     unoptimized
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 rounded-[20px]"
+                    className="object-cover scale-[1.15] group-hover:scale-125 transition-transform duration-500"
                 />
             </div>
 
@@ -39,7 +39,7 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                 </div>
 
                 <div className="flex items-center justify-between gap-2 w-full">
-                    <button 
+                    <button
                         onClick={() => setQty(Math.max(0, qty - 1))}
                         className="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-[#CECECF] bg-[#f9f9f9] text-[#cececf] hover:text-[#8b8b8b] hover:bg-gray-100 transition-colors"
                     >
@@ -48,9 +48,9 @@ export default function FoodCard({ title, details, price, image, quantity = 0 }:
                     <div className="flex-1 h-8 flex items-center justify-center rounded-full bg-[#f9f9f9]">
                         <span className="font-bold text-[#8b8b8b] text-[13px]">{qty}</span>
                     </div>
-                    <button 
+                    <button
                         onClick={() => setQty(qty + 1)}
-                        className="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-[#f95e34]/30 bg-[#fff5f2] text-[#f95e34] hover:bg-[#ffece6] transition-colors"
+                        className="w-8 h-8 shrink-0 flex items-center justify-center rounded-full border border-[#FF4700] bg-[#FFD1BF] text-[#FF4700] hover:bg-[#ffc6b0] transition-colors"
                     >
                         <Icon icon="ic:round-plus" width="18" height="18" />
                     </button>

@@ -68,41 +68,41 @@ export default function SpecialOffers() {
                         className="shrink-0 snap-start w-[750px] h-[446px] bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.08)] flex relative group hover:shadow-[0_8px_32px_-8px_rgba(0,0,0,0.13)] transition-shadow duration-300"
                     >
                         {/* ── Left: Text content ── */}
-                        <div className="flex flex-col justify-center px-10 py-8 w-[52%] z-10 relative">
-                            <h3 className="text-[34px] font-extrabold text-[#1a1a1a] leading-[1.08] mb-3 tracking-[-0.03em] whitespace-pre-line">
+                        <div className="flex flex-col justify-center pl-[52px] py-10 w-[55%] z-20 relative">
+                            <h3 className="text-[46px] font-extrabold text-[#1f1f1f] leading-[1.1] mb-5 tracking-tight whitespace-pre-line">
                                 {offer.title}
                             </h3>
-                            <p className="text-[#888] text-[13px] font-medium mb-5 max-w-[230px] leading-[1.65]">
+                            <p className="text-[#7d7d7d] text-[15px] font-medium mb-6 max-w-[300px] leading-[1.6]">
                                 {offer.description}
                             </p>
-                            <div className="flex items-center gap-3 mb-6">
-                                <span className="text-[22px] font-extrabold text-[#f95e34]">{offer.price}</span>
-                                <span className="text-[#c0c0c0] line-through text-[14px] font-bold">{offer.oldPrice}</span>
+                            <div className="flex items-end gap-3 mb-10">
+                                <span className="text-[32px] font-extrabold text-[#ff4700] leading-none">{offer.price}</span>
+                                <span className="text-[#c0c0c0] line-through text-[20px] font-bold leading-none mb-0.5">{offer.oldPrice}</span>
                             </div>
                             <div>
-                                <button className="flex items-center gap-3 bg-black text-white pl-6 pr-2 py-2 rounded-full font-bold text-[11px] tracking-widest hover:bg-[#222] transition-all">
+                                <button className="flex items-center gap-6 bg-black text-white pl-8 pr-1.5 py-1.5 rounded-full font-bold text-[13px] tracking-wider hover:bg-[#222] transition-all">
                                     ORDER NOW
-                                    <div className="bg-white rounded-full w-[24px] h-[24px] flex items-center justify-center">
-                                        <Icon icon="solar:arrow-right-line-duotone" width="14" height="14" className="text-[#f95e34]" />
+                                    <div className="bg-white rounded-full w-[36px] h-[36px] flex items-center justify-center shrink-0">
+                                        <Icon icon="solar:arrow-right-line-duotone" width="18" height="18" className="text-[#ff4700]" />
                                     </div>
                                 </button>
                             </div>
                         </div>
 
                         {/* ── Right: Food Image ── fills the right half edge-to-edge */}
-                        <div className="absolute top-0 right-0 bottom-0 w-[52%]">
+                        <div className="absolute bottom-[-10px] right-[-20px] w-[58%] h-[105%] z-10">
                             <Image
                                 src={offer.image}
                                 alt={offer.imageAlt}
                                 fill
-                                className="object-cover object-left group-hover:scale-[1.03] transition-transform duration-500"
+                                className="object-contain object-bottom group-hover:scale-[1.03] transition-transform duration-500"
                                 unoptimized
                                 priority
                             />
                         </div>
 
                         {/* ── Badge: sits at the seam between text and image ── */}
-                        <div className="absolute top-6 left-[44%] -translate-x-1/2 z-20 w-[205.91px] h-[185.92px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
+                        <div className="absolute top-8 left-[58%] -translate-x-1/2 z-30 w-[240px] h-[216px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
                             {/* bubble is the purple background */}
                             <Image
                                 src="/images/bubble.svg"
@@ -111,9 +111,10 @@ export default function SpecialOffers() {
                                 className="object-contain"
                                 unoptimized
                                 priority
-                            /> </div>
+                            /> 
+                        </div>
                         {/* 50% OFF text sits on top */}
-                        <div className="absolute top-6 left-[44%] -translate-x-1/2 z-20 w-[167.51px] h-[79.23px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
+                        <div className="absolute top-16 left-[58%] -translate-x-1/2 z-30 w-[160px] h-[80px] pointer-events-none group-hover:scale-105 transition-transform duration-300">
                             <div className="absolute inset-0">
                                 <Image
                                     src="/images/50.svg"
