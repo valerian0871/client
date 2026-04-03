@@ -37,16 +37,15 @@ export default function CategoriesMenu() {
                 </div>
             </div>
             
-            <div ref={scrollRef} className="flex gap-[18px] w-full overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div ref={scrollRef} className="flex items-center gap-[18px] w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {CATEGORIES.map((cat, idx) => (
-                    <div key={idx} className="shrink-0 snap-start">
-                        <CategoryPill 
-                            title={cat.title} 
-                            image={cat.image} 
-                            isActive={activeIndex === idx} 
-                            onClick={() => setActiveIndex(idx)}
-                        />
-                    </div>
+                    <CategoryPill 
+                        key={idx} 
+                        title={cat.title} 
+                        image={cat.image} 
+                        isActive={activeIndex === idx} 
+                        onClick={() => setActiveIndex(idx)}
+                    />
                 ))}
             </div>
         </section>
