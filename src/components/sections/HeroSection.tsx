@@ -24,7 +24,7 @@ export default function HeroSection() {
                 <div className="relative z-10 w-full md:w-1/2 h-[300px] md:h-full mt-10 md:mt-0 flex items-center justify-center md:justify-end">
                     <div className="w-[280px] h-[280px] md:w-[450px] md:h-[450px] bg-white/10 rounded-full blur-3xl absolute top-1/2 -translate-y-1/2 right-[10%]"></div>
                     <div className="relative w-full h-full max-w-[500px] min-h-[250px] md:min-h-[300px] flex items-center justify-center">
-                        <Image src="/images/hamburger.png" priority alt="Hero Burger" fill className="object-contain scale-[1.35] md:scale-[1.50] drop-shadow-[0_30px_50px_rgba(0,0,0,0.4)] hover:scale-[1.15] md:hover:scale-[1.25] hover:-translate-y-4 transition-all duration-700 ease-out" unoptimized />
+                        <Image src="/images/hamburger.png" priority alt="Hero Burger" fill className="object-contain scale-[1.35] md:scale-[1.50] drop-shadow-[0_30px_50px_rgba(0,0,0,0.4)]" unoptimized />
                     </div>
                 </div>
             </section>
