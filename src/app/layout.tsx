@@ -3,6 +3,7 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import { CartProvider } from "../context/CartContext";
 
 
 const nunito = Nunito({
@@ -45,11 +46,13 @@ export default function RootLayout({
       className={`${nunito.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col bg-white">
-        <Navbar />
-        <main className="flex-1 w-full mx-auto">
-          {children}
-        </main>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <main className="flex-1 w-full mx-auto">
+            {children}
+          </main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

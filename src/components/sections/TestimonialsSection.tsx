@@ -38,17 +38,17 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
     return (
-        <section className="mb-24 px-4 overflow-hidden">
-            <hr className="max-w-6xl mx-auto border-gray-100 mb-12 md:mb-16" />
-            <h2 className="text-2xl md:text-3xl font-extrabold text-[#1a1a1a] tracking-tight mb-12 text-center">
+        <section className="mb-10 md:mb-24 px-4 overflow-hidden">
+            <hr className="max-w-6xl mx-auto border-gray-100 mb-6 md:mb-16" />
+            <h2 className="text-[20px] md:text-3xl leading-[20px] md:leading-tight font-extrabold text-[#1a1a1a] tracking-tight mb-2 md:mb-12 text-center">
                 What our customers says
             </h2>
 
-            <div className="flex gap-6 overflow-x-auto pb-8 pt-4 px-4 -mx-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] snap-x snap-mandatory">
+            <div className="flex gap-4 md:gap-6 overflow-x-auto pb-4 md:pb-8 pt-2 md:pt-4 px-4 -mx-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] snap-x snap-mandatory">
                 {TESTIMONIALS.map((testimonial, idx) => (
                     <div
                         key={idx}
-                        className="w-[270px] min-w-[270px] h-[310px] bg-white rounded-[10px] p-6 border border-[#e8e8e8] shrink-0 snap-center flex flex-col shadow-none"
+                        className="w-[270px] md:w-[350px] min-w-[270px] md:min-w-[350px] h-[310px] md:h-auto bg-white rounded-[32px] p-6 border border-[#e8e8e8] shrink-0 snap-center flex flex-col shadow-none"
                     >
                         <div className="flex items-center gap-4 mb-4">
                             <div className="w-[52px] h-[52px] rounded-full bg-gray-100 overflow-hidden relative shrink-0">
@@ -83,10 +83,11 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Pagination Dots */}
-            <div className="flex items-center justify-center gap-2 mt-4">
-                <div className="w-10 h-1.5 rounded-full bg-[#f95e34]"></div>
-                <div className="w-6 h-1.5 rounded-full bg-[#f95e34]/30 cursor-pointer hover:bg-[#f95e34]/50 transition-colors"></div>
-                <div className="w-6 h-1.5 rounded-full bg-[#f95e34]/30 cursor-pointer hover:bg-[#f95e34]/50 transition-colors"></div>
+            <div className="flex items-center justify-center gap-1.5 md:gap-2 mt-4">
+                <div className="w-8 md:w-10 h-1.5 rounded-full bg-[#f95e34]"></div>
+                <div className="w-5 md:w-6 h-1.5 rounded-full bg-[#ffcdba] cursor-pointer hover:bg-[#f95e34]/50 transition-colors"></div>
+                <div className="w-5 md:w-6 h-1.5 rounded-full bg-[#ffcdba] cursor-pointer hover:bg-[#f95e34]/50 transition-colors"></div>
+                <div className="w-5 md:w-6 h-1.5 rounded-full bg-[#ffcdba] cursor-pointer hover:bg-[#f95e34]/50 transition-colors"></div>
             </div>
         </section>
     );

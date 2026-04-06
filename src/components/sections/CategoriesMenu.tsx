@@ -23,9 +23,9 @@ export default function CategoriesMenu() {
     };
 
     return (
-        <section className="mb-12 h-auto md:h-[140px] px-4 md:px-0 flex flex-col justify-center border-t border-gray-100 pt-4">
+        <section className="mb-12 h-auto px-4 md:px-0 flex flex-col justify-center">
             <div className="flex items-center justify-between mb-4 gap-4">
-                <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[55px] text-[#1a1a1a]">Our menus</h2>
+                <h2 className="text-[20px] md:text-[36px] font-extrabold md:font-bold tracking-[-0.03em] leading-[20px] md:leading-[55px] text-[#1a1a1a]">Our menus</h2>
                 <span className="text-blue-500 font-bold text-[13px] sm:hidden cursor-pointer hover:underline">See all</span>
                 <div className="hidden sm:flex items-center gap-2">
                     <button onClick={() => scroll('left')} className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:border-[#ff4700] hover:text-[#ff4700] transition-colors bg-white shadow-sm">
@@ -37,7 +37,7 @@ export default function CategoriesMenu() {
                 </div>
             </div>
             
-            <div ref={scrollRef} className="flex items-center gap-[18px] w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div ref={scrollRef} className="flex items-center overflow-x-auto snap-x snap-mandatory gap-[12px] md:gap-[18px] w-full pb-2 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {CATEGORIES.map((cat, idx) => (
                     <CategoryPill 
                         key={idx} 

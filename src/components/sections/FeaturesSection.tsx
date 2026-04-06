@@ -4,17 +4,17 @@ import Image from "next/image";
 
 export default function FeaturesSection() {
     return (
-        <section className="mb-20 text-center">
-            <h4 className="font-extrabold text-[#f95e34] text-[24px] leading-[34px] tracking-[-0.03em] uppercase mb-2 md:mb-3 text-center align-middle">
+        <section className="mb-0 md:mb-20 text-center">
+            <h4 className="font-extrabold text-[#f95e34] text-[10px] md:text-[24px] leading-normal md:leading-[34px] tracking-tight md:tracking-[-0.03em] uppercase mb-1 md:mb-3 text-center align-middle">
                 About Cake'n'Pastries
             </h4>
-            <h2 className="text-[48px] leading-[48px] md:text-4xl font-extrabold text-[#1a1a1a] tracking-tight mb-10 md:mb-12 text-center max-w-[200px] md:max-w-none mx-auto">
+            <h2 className="text-[20px] leading-[20px] md:text-[48px] md:leading-[48px] font-extrabold text-[#1a1a1a] tracking-tight mb-8 md:mb-12 text-center max-w-[200px] md:max-w-none mx-auto">
                 Our offers makes us different
             </h2>
 
             <div className="flex overflow-x-auto snap-x snap-mandatory gap-3 justify-start md:justify-center items-center md:w-[696px] md:h-[346px] md:mx-auto mb-16 pb-4 md:pb-0 px-4 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                 {/* Feature 1 */}
-                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
+                <div className="relative w-[145px] h-[188px] md:w-[224px] md:h-[346px] rounded-[133px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
                         <Image src="/images/about.png" alt="Daily Menu & Fresh Food" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
@@ -25,7 +25,7 @@ export default function FeaturesSection() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
+                <div className="relative w-[145px] h-[188px] md:w-[224px] md:h-[346px] rounded-[133px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
                         <Image src="/images/about.png" alt="Baking Services" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>
@@ -36,7 +36,7 @@ export default function FeaturesSection() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="relative w-[150px] h-[150px] md:w-[224px] md:h-full rounded-[100px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
+                <div className="relative w-[145px] h-[188px] md:w-[224px] md:h-[346px] rounded-[133px] md:rounded-[112px] overflow-hidden group shadow-lg shrink-0 snap-center">
                     <div className="absolute inset-0 bg-gray-200">
                         <Image src="/images/about.png" alt="Co-working Space" fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized />
                     </div>

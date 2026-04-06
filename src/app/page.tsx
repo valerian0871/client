@@ -15,7 +15,7 @@ export default function Home() {
         <SearchBar />
       </div>
       
-      <div className="mt-8 space-y-20">
+      <div className="mt-4 md:mt-8 space-y-6 md:space-y-20">
         <CategoriesMenu />
         <BestSellers />
         <SpecialOffers />

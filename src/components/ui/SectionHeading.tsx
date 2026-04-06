@@ -12,7 +12,7 @@ export default function SectionHeading({ title, subtitle, showSeeAll, seeAllLink
     return (
         <div className="flex items-center justify-between mb-6">
             <div className="flex items-baseline gap-3">
-                <h2 className="text-2xl font-extrabold text-[#1a1a1a] tracking-tight">{title}</h2>
+                <h2 className="text-[20px] md:text-2xl font-extrabold text-[#1a1a1a] tracking-[-0.03em] leading-[20px] md:leading-tight">{title}</h2>
                 {subtitle && (
                     <span className="text-sm font-bold text-gray-500 hidden sm:inline-block">
                         - ({subtitle})
